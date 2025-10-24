@@ -78,14 +78,14 @@ function App() {
     Kitchen: Sparkles,
     Bathroom: Droplet,
     Floors: Home,
-    Other: Package,
+    Shower: Package,
   };
 
   const choreColors = {
     Kitchen: 'from-emerald-400 to-emerald-500',
     Bathroom: 'from-sky-400 to-sky-500',
     Floors: 'from-purple-400 to-purple-500',
-    Other: 'from-orange-400 to-orange-500',
+    Shower: 'from-orange-400 to-orange-500',
   };
 
   return (
