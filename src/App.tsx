@@ -16,13 +16,17 @@ function getNextSunday(date: Date): Date {
   result.setHours(23, 59, 59, 999);
   return result;
 }
+// """
+//  CJRCC
+//  CCJR
 
+// """
 function getParkingAssignments(weekNumber: number) {
   const baseOffset = (weekNumber * 3) % PEOPLE.length;
   return {
-    friday: PEOPLE[(baseOffset % PEOPLE.length)-1  ],
-    saturday: PEOPLE[(baseOffset) % PEOPLE.length],
-    sunday: PEOPLE[(baseOffset + 1) % PEOPLE.length],
+    friday: PEOPLE[(baseOffset) % PEOPLE.length],
+    saturday: PEOPLE[(baseOffset + 1) % PEOPLE.length],
+    sunday: PEOPLE[(baseOffset + 2) % PEOPLE.length],
   };
 }
 
